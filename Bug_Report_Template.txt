@@ -27,7 +27,7 @@ D3: Implemented buildBreakdown(payable, count) with a for loop showing each seme
 FUNCTIONAL TEST
 Test input: Tuition ₹50,000; laboratory ₹2,000; Merit; 2 semesters.
 Observed result: Subtotal ₹52,000; discount ₹10,400; administration charge ₹2,600; payable ₹44,200; Semester 1 cumulative ₹44,200; Semester 2 cumulative ₹88,400.
-Mobile layout checked (Yes/No): Mark Yes only after checking in the browser.
+Mobile layout checked (Yes/No): Yes
 
 GIT VERSION CONTROL
 git log -1 --oneline output: fd8dbe7 Complete ITUS102 fee planner practical
