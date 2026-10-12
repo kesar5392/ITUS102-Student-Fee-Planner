@@ -1,0 +1,34 @@
+ITUS102 - PRACTICAL EXAMINATION | DEBUGGING AND IMPLEMENTATION REPORT
+Date: 12-10-2026 | Task 01 - Student Fee and Scholarship Planner
+
+Enrollment No.: ____________________
+Name: ____________________
+
+SIMPLE BUGS (write a brief explanation for each)
+Bug | Original problem | Correction made | Why required
+S1 | Navigation linked to #calcuator (misspelled and not a matching ID). | Changed target to #calculator. | The link now scrolls to the calculator section.
+S2 | Footer information used a generic div. | Replaced the div with the semantic <footer> element. | Footer identifies the page's closing/site information semantically.
+S3 | background-color declaration missed a colon. | Changed it to background-color: #f1f6f9;. | Valid CSS syntax is required for the background color to apply.
+S4 | CSS used .pageTitle, which selects a class. | Changed selector to #pageTitle. | The HTML heading uses id="pageTitle", so an ID selector is required.
+S5 | Tuition fee was read as text. | Wrapped the input value in Number(...). | This makes + perform numeric addition instead of joining text strings.
+S6 | Administration charge used 50% (0.50). | Changed multiplier to 0.05. | The required administration charge is 5% of the subtotal.
+
+CODE COMPLETION / IMPLEMENTATION
+M1: Added UTF-8 charset and responsive viewport metadata.
+M2: Added an <aside class="notice"> with an Important Note heading and input reminder.
+M3: Used display: flex and justify-content: space-between for navigation links.
+M4: Used CSS Grid with two equal-width columns for the information cards.
+M5: Added a media query at 600px to stack the cards and make navigation vertical.
+M6: Implemented calculateDiscount(amount, percentage) as amount * percentage / 100.
+D1: Implemented getRate(type) using if / else if / else: Merit = 20, Sports = 10, otherwise 0.
+D2: Implemented calculateTotal(subtotal, discount, adminCharge) as subtotal - discount + adminCharge.
+D3: Implemented buildBreakdown(payable, count) with a for loop showing each semester's payable amount and cumulative fee.
+
+FUNCTIONAL TEST
+Test input: Tuition ₹50,000; laboratory ₹2,000; Merit; 2 semesters.
+Observed result: Subtotal ₹52,000; discount ₹10,400; administration charge ₹2,600; payable ₹44,200; Semester 1 cumulative ₹44,200; Semester 2 cumulative ₹88,400.
+Mobile layout checked (Yes/No): Mark Yes only after checking in the browser.
+
+GIT VERSION CONTROL
+git log -1 --oneline output: Add your actual commit output here after creating a commit.
+GitHub URL (if available): Add your repository URL here if you pushed the project.

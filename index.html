@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Fee and Scholarship Planner - Practical Assessment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header" id="top">
+        <h1 id="pageTitle">College Fee Desk</h1>
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="#calculator">Fee calculator</a>
+            <a href="#results">Results</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="calculator">
+            <h2>Student Fee and Scholarship Planner</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Enter information</h3>
+                    <label for="baseFee">Tuition fee (₹)</label>
+                    <input id="baseFee" type="number" value="50000" min="0" step="100">
+                    <label for="labFee">Laboratory fee (₹)</label>
+                    <input id="labFee" type="number" value="2000" min="0" step="100">
+                    <label for="semesters">Number of semesters (1–4)</label>
+                    <input id="semesters" type="number" value="2" min="1" max="4" step="1">
+                    <label for="scholarship">Scholarship type</label>
+                    <select id="scholarship">
+                        <option value="Merit">Merit</option>
+                        <option value="Sports">Sports</option>
+                        <option value="None">None</option>
+                    </select>
+                    <button type="button" onclick="calculateFee()">Calculate</button>
+                </article>
+                <article class="card">
+                    <h3>Calculation policy</h3>
+                    <p>Merit scholarship: 20%; Sports scholarship: 10%; None: 0%. Administration charge: 5% of fee subtotal.</p>
+                    <p>Use the Calculate button to check the result and the detailed summary.</p>
+                </article>
+            </div>
+        </section>
+
+        <aside class="notice">
+            <h2>Important Note</h2>
+            <p>Please check that all fee values are correct and that the number of semesters is between 1 and 4.</p>
+        </aside>
+
+        <section id="results" class="card result-card">
+            <h2>Calculated result</h2>
+            <p id="result">Enter values and select Calculate.</p>
+            <h3>Detailed summary</h3>
+            <pre id="breakdown">The breakdown will appear here.</pre>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>College Fee Desk — ITUS102 | Web Technology Framework</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
