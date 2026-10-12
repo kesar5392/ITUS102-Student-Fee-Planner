@@ -32,4 +32,6 @@ Mobile layout checked (Yes/No): Yes
 GIT VERSION CONTROL
 git log -1 --oneline output: fd8dbe7 Complete ITUS102 fee planner practical
 git log -1 --oneline output: 76b0189 Update practical report
-GitHub URL (if available): https://github.com/kesar5392/ITUS102-Student-Fee-Planner
+Latest commit (`git log -1 --oneline`): 85dbbba Update GitHub URL in practical report
+
+GitHub URL: https://github.com/kesar5392/ITUS102-Student-Fee-Planner
