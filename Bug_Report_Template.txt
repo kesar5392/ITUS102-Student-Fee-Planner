@@ -31,4 +31,5 @@ Mobile layout checked (Yes/No): Mark Yes only after checking in the browser.
 
 GIT VERSION CONTROL
 git log -1 --oneline output: fd8dbe7 Complete ITUS102 fee planner practical
-GitHub URL (if available): Add your repository URL here if you pushed the project.
+git log -1 --oneline output: 76b0189 Update practical report
+GitHub URL (if available): https://github.com/kesar5392/ITUS102-Student-Fee-Planner
