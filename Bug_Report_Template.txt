@@ -1,8 +1,8 @@
 ITUS102 - PRACTICAL EXAMINATION | DEBUGGING AND IMPLEMENTATION REPORT
 Date: 12-10-2026 | Task 01 - Student Fee and Scholarship Planner
 
-Enrollment No.: ____________________
-Name: ____________________
+Enrollment No.: 26CE023
+Name: Keya Dobaria
 
 SIMPLE BUGS (write a brief explanation for each)
 Bug | Original problem | Correction made | Why required
@@ -30,5 +30,5 @@ Observed result: Subtotal ₹52,000; discount ₹10,400; administration charge �
 Mobile layout checked (Yes/No): Mark Yes only after checking in the browser.
 
 GIT VERSION CONTROL
-git log -1 --oneline output: Add your actual commit output here after creating a commit.
+git log -1 --oneline output: fd8dbe7 Complete ITUS102 fee planner practical
 GitHub URL (if available): Add your repository URL here if you pushed the project.
